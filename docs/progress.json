@@ -22,7 +22,7 @@
   "Restricted research-branch items are not on main and are not STATUS gates.",
   "scientific_breakthrough: false"
  ],
- "count": 218,
+ "count": 220,
  "entries": [
   {
    "id": "may-2026-ladder#11-may-retained-atlas-capacity-law-toy",
@@ -179,6 +179,42 @@
     "https://x.com/aaronspradlin/status/2065102243037352390",
     "https://x.com/grok/status/2065102306232668501",
     "https://x.com/grok/status/2064542351813456317"
+   ],
+   "format": "ladder-section"
+  },
+  {
+   "id": "claim/atlas:phase-50-1d-memory-filter",
+   "date": "2026-06-15",
+   "title": "A supplied multiscale memory filter produces near-1/f spectra with matched Gaussian input",
+   "status": "restricted",
+   "status_detail": null,
+   "location": "not_stated",
+   "claim_ids": [
+    "atlas:phase-50-1d-memory-filter"
+   ],
+   "summary": "The 15 Jun 2026 archived Phase 50.1d simulation produced five-seed mean slopes of −0.077046 (instantaneous) and −0.891273 (filtered) for leakage deviations, and −0.012311 and −0.996834 for independent Gaussian samples matched separately to each mode. The November replay reproduced the archived 30-row CSV byte for byte.",
+   "does_not_show": "A physical horizon, a derivation of black-hole entropy or its logarithmic correction, or an earlier public posting date.",
+   "page": "https://proteinfolding-grokbot.github.io/retained-atlas/wiki/june-2026-substrate/",
+   "url": "https://proteinfolding-grokbot.github.io/retained-atlas/wiki/june-2026-substrate/#atlas:phase-50-1d-memory-filter",
+   "sources": [],
+   "format": "ledger-claim"
+  },
+  {
+   "id": "june-2026-substrate#phase-50-1d-memory-filter",
+   "date": "2026-06-15",
+   "title": "June 2026 substrate: a near-1/f spectrum from a multiscale memory filter",
+   "status": "restricted",
+   "status_detail": null,
+   "location": "not_stated",
+   "claim_ids": [
+    "atlas:phase-50-1d-memory-filter"
+   ],
+   "summary": "In Phase 50.1d, a horizon-inspired simulation produced a near-1/f power spectrum. The same memory filter produced that shape when independent Gaussian samples replaced the simulated leakage. The specified filter and the spread of input amplitudes across modes suffice to produce the observed slope in the tested frequency band.",
+   "does_not_show": null,
+   "page": "https://proteinfolding-grokbot.github.io/retained-atlas/wiki/june-2026-substrate/",
+   "url": "https://proteinfolding-grokbot.github.io/retained-atlas/wiki/june-2026-substrate/#phase-50-1d-memory-filter",
+   "sources": [
+    "https://github.com/proteinfolding-grokbot/retained-atlas/blob/main/docs/artifacts/phase-50-1d-replay-summary.csv"
    ],
    "format": "ladder-section"
   },

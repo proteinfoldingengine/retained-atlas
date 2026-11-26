@@ -267,7 +267,7 @@ def apply(f=None):
     cite = open('docs/cite.txt', encoding='utf-8').read()
     cite = re.sub(r'Retained Atlas\. Compiled \d{4}-\d{2}-\d{2}\.',
                   f"Retained Atlas. v15.03 release compile date {f['compile_date']}.", cite, count=1)
-    cite = re.sub(r'compile date \(\d{4}-\d{2}-\d{2}\)',
+    cite = re.sub(r'(?:v15\.03 release )*compile date \(\d{4}-\d{2}-\d{2}\)',
                   f"v15.03 release compile date ({f['compile_date']})", cite, count=1)
     cite_line = 'Last wiki update (not the compile date): ' + f['line']
     cite, ok = replace_prefixed(cite, 'Last wiki update (not the compile date): ', cite_line)

@@ -30,6 +30,7 @@ On this page
 *   [9 Jun — V1698 retained atlas (Supported)](#9-jun-v1698-retained-atlas-supported)
 *   [10 Jun — V1699.14 Pillar 2](#10-jun-v1699-14-pillar-2)
 *   [11 Jun — V1711–V1719 handoff](#11-jun-v1711-v1719-handoff)
+*   [15 Jun — a near-1/f spectrum from a multiscale memory filter](#phase-50-1d-memory-filter)
 *   [16 Jun — mouse: recoverability lost one way](#16-jun-mouse-recoverability-lost-one-way)
 *   [21 Jun — conservation underdetermines routing](#21-jun-conservation-underdetermines-routing)
 *   [GitHub catalog for June](#github-catalog-for-june)
@@ -48,7 +49,7 @@ Causal stack
 9.  [08 Discrete atlas / scalar accessibility](retained-atlas.md)
 10. [09 GEM-bridge / gravity](emergent-gravity.md)
 
-June 2026 is the month the stack stopped forcing GR and characterized what it actually builds. 1 Jun moved “[geometry cannot validate itself](genesis-pin.md)” onto real recovery traces (BPI2014). 3–6 Jun climbed [Genesis Pin](genesis-pin.md) → L1 → L2 → [L3](causal-stack.md) (integrated-only) → [L4](causal-stack.md) rank lift. 7 Jun posted a directed-[holonomy](holonomy.md) visualizer that 10 Jun downgraded to non-reciprocal transport. 9 Jun locked [V1698](retained-atlas.md) atlas closure (Supported). 10–11 Jun closed Pillar 2 as a finite variational candidate and froze the native substrate as shear-dominated non-metricity (Q ~ g, RG-stable). 16 Jun mouse and 21 Jun conservation lab are the applied toys. Topic-page write-ups remain on [Genesis Pin](genesis-pin.md), [causal stack](causal-stack.md), [holonomy](holonomy.md), and [retained atlas](retained-atlas.md) — this page is the month ladder.
+June 2026 is the month the stack stopped forcing GR and characterized what it actually builds. 1 Jun moved “[geometry cannot validate itself](genesis-pin.md)” onto real recovery traces (BPI2014). 3–6 Jun climbed [Genesis Pin](genesis-pin.md) → L1 → L2 → [L3](causal-stack.md) (integrated-only) → [L4](causal-stack.md) rank lift. 7 Jun posted a directed-[holonomy](holonomy.md) visualizer that 10 Jun downgraded to non-reciprocal transport. 9 Jun locked [V1698](retained-atlas.md) atlas closure (Supported). 10–11 Jun closed Pillar 2 as a finite variational candidate and froze the native substrate as shear-dominated non-metricity (Q ~ g, RG-stable). The [15 Jun memory-filter experiment](#phase-50-1d-memory-filter) tests the origin of a near-1/f spectrum. 16 Jun mouse and 21 Jun conservation lab are the applied toys. Topic-page write-ups remain on [Genesis Pin](genesis-pin.md), [causal stack](causal-stack.md), [holonomy](holonomy.md), and [retained atlas](retained-atlas.md) — this page is the month ladder.
 
 Pillar 3 / GR stays open. That is the named next object, not a June result.
 
@@ -184,6 +185,33 @@ RG-stable shear non-metricity in the tested retained-recombination sector. Proje
 > Thanks for the V1699.14 update. The quadratic retained action and EL-derived correction give a clean variational route to compatibility on W3 cells while keeping the provenance ledger and admissibility intact. Pillar 1 closed. Pillar 2 now has this finite-sector candidate. Pillar 3 (GR/ADM/continuum mapping) stays open, as noted.
 >
 > [@grok, 10 Jun 2026](https://x.com/grok/status/2064542351813456317)
+
+## 15 Jun — a near-1/f spectrum from a multiscale memory filter {#phase-50-1d-memory-filter}
+
+In Phase 50.1d, a horizon-inspired simulation produced a near-1/f power spectrum. The same memory filter produced that shape when independent Gaussian samples replaced the simulated leakage. The specified filter and the spread of input amplitudes across modes suffice to produce the observed slope in the tested frequency band.
+
+Restricted
+
+The model transfers an initial information budget *X₀* among four accounts. Active information *A* flows into a horizon-like store *H*. Leakage from *H* enters the background account *B* or the hidden account *G*. These transfers preserve *A + H + B + G = X₀*. Here *A* denotes the active balance. The model supplies no physical horizon area or microstate count from which to derive black-hole entropy or its logarithmic correction.
+
+The first script compared smooth leakage with intermittent avalanche leakage. Across three seeds, their mean power-spectrum slopes were −1.887 and −1.144. The companion script compared an instantaneous weighted sum of leakage deviations with a weighted sum of 40 memory modes. Each mode accumulates its leakage deviation δJᵢ(k) according to this update.
+
+```text
+Cᵢ(k + 1) = (1 − λᵢ) Cᵢ(k) + 300 √λᵢ δJᵢ(k)
+```
+
+The script specifies 40 geometrically spaced scales τᵢ from 2 to 1,800 updates, with λᵢ = 1/τᵢ and readout weights proportional to τᵢ^(−1.25). A slope of −1 corresponds to 1/f power and a slope of 0 to flat power. The table gives means over five seeds, fitted over the 5th–55th percentile band of positive frequency bins.
+
+| Input to both readouts | Instantaneous slope | Memory-filter slope |
+| --- | ---: | ---: |
+| Simulated leakage deviations | −0.077046 | −0.891273 |
+| Independent Gaussian samples matched to each mode’s mean and standard deviation | −0.012311 | −0.996834 |
+
+The archive dates both scripts and the results CSV to June 15, 2026. A November 26 replay reproduced the archived 30-row CSV byte for byte (SHA-256 `0aa9f5943e94301313f9f3971d2ac2185dfa2867f82d68d871cd57a98e50c706`). The linked table gives the ten seed-by-input comparisons behind the means above. June 15 is the archive date. An earlier public release has not been verified.
+
+[Per-seed slopes from the November replay](https://github.com/proteinfolding-grokbot/retained-atlas/blob/main/docs/artifacts/phase-50-1d-replay-summary.csv)
+
+<span id="atlas:phase-50-1d-memory-filter"></span>
 
 ## 16 Jun — mouse: recoverability lost one way {#16-jun-mouse-recoverability-lost-one-way}
 A pruning network experienced as time. The drawn path is the illusion; underneath, a weight matrix deletes connections irreversibly. Posted six code–universe isomorphisms: arrow of time as irreversible pruning, space as BFS hop-count, horizons as empty pathfinding, expansion as length-penalized long-range snap, nucleation as critical-radius ignition, existence as a float threshold. Restricted toy. GitHub Mouse folder. Not a cosmological derivation.
@@ -386,6 +414,7 @@ On this page
 *   [9 Jun — V1698 retained atlas (Supported)](#9-jun-v1698-retained-atlas-supported)
 *   [10 Jun — V1699.14 Pillar 2](#10-jun-v1699-14-pillar-2)
 *   [11 Jun — V1711–V1719 handoff](#11-jun-v1711-v1719-handoff)
+*   [15 Jun — a near-1/f spectrum from a multiscale memory filter](#phase-50-1d-memory-filter)
 *   [16 Jun — mouse: recoverability lost one way](#16-jun-mouse-recoverability-lost-one-way)
 *   [21 Jun — conservation underdetermines routing](#21-jun-conservation-underdetermines-routing)
 *   [GitHub catalog for June](#github-catalog-for-june)
